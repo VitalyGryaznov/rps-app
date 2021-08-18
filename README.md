@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+#Frontend part for the ROCK-SCISSORS_PAPER game
+
+![alt text](https://raw.githubusercontent.com/VitalyGryaznov/rsp-frontend/main/Screenshot_01.png)
+![alt text](https://raw.githubusercontent.com/VitalyGryaznov/rsp-frontend/main/Screenshot_02.png)
+
+Need to have running backend part on http://localhost:8080 to start. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
