@@ -1,4 +1,4 @@
-# Frontend part for the ROCK-SCISSORS_PAPER game
+# Frontend part for the ROCK-SCISSORS-PAPER game
 
 ![alt text](https://raw.githubusercontent.com/VitalyGryaznov/rsp-frontend/main/Screenshot_01.png)
 ![alt text](https://raw.githubusercontent.com/VitalyGryaznov/rsp-frontend/main/Screenshot_02.png)
