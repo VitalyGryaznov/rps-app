@@ -6,9 +6,10 @@ import { gameOptions} from '../constants/gameOptions';
 import { CircularProgress } from "@material-ui/core";
 import { useHistory } from 'react-router-dom';
 
+type resultType = "WIN" | "LOSE" | "TIE";
+
 
 const Result = () => {
-    type resultType = "WIN" | "LOSE" | "TIE";
     const history = useHistory();
     const gamesState = useSelector((state: RootState) => state);
     const [loading, setLoading] = useState(true); 
