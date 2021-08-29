@@ -1,13 +1,12 @@
-
 .game-option-container {
-    padding: 0 30px 0 30px;
-    .game-option-image {
-        height: 300px;
-        width: auto;
-        transition: '0.2s';
-        &:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-        }
+  padding: 0 30px 0 30px;
+  .game-option-image {
+    height: 300px;
+    width: auto;
+    transition: "0.2s";
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
     }
+  }
 }

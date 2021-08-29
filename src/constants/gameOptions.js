@@ -1,4 +1,4 @@
-export default [
+export const gameOptions = [
     {
         name: "ROCK",
         image: "rock.png"
