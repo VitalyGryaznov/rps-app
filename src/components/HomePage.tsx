@@ -9,7 +9,7 @@ const HomePage = () => {
       <h1>Click on any option to play</h1>
       <div className="game-choices">
         {gameOptions.map((option) => (
-          <GameOption name={option.name} image={option.image} />
+          <GameOption key={option.name} name={option.name} image={option.image} />
         ))}
       </div>
     </div>
