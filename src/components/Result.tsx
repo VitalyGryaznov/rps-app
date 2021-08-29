@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { AppDispatch, RootState } from "../redux/store";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
 import './Result.scss';
-import gameOptions from '../constants/gameOptions';
+import { gameOptions} from '../constants/gameOptions';
 import { CircularProgress } from "@material-ui/core";
 import { useHistory } from 'react-router-dom';
 
@@ -20,7 +20,7 @@ const Result = () => {
 
 
     const getResult = async () => {
-        setCustomerChoiceImage(require("../assets/" + gameOptions.find(it => it.name == gamesState.game.customerChoice)?.image).default);
+        setCustomerChoiceImage(require("../assets/" + gameOptions.find(it => it.name === gamesState.game.customerChoice)?.image).default);
         const response = await fetch("http://localhost:3000/play", {
             method: 'POST',
             headers: {
@@ -31,7 +31,7 @@ const Result = () => {
         const resultBody = await response.json();
         setComputerChoice(resultBody.computerChoice);
         setResult(resultTexts[resultBody.result as resultType]);
-        setComputerChoiceImage(require("../assets/" + gameOptions.find(it => it.name == resultBody.computerChoice)?.image).default);
+        setComputerChoiceImage(require("../assets/" + gameOptions.find(it => it.name === resultBody.computerChoice)?.image).default);
         setLoading(false)
     }
 
@@ -48,7 +48,7 @@ const Result = () => {
         <div className="results">
             <div className="results_item">
                 <div>Your choice</div>
-                <img src={customerChoiceImage} className="choice_image"></img>
+                <img alt={gamesState.game.customerChoice} src={customerChoiceImage} className="choice_image"></img>
             </div>
             <div className="results_item results_item_center-horizontally results_item_highlited">
                 {(loading) ? (<div className="centered"><CircularProgress /></div>) : (
@@ -62,7 +62,7 @@ const Result = () => {
 
                 {(loading) ? (<div className="centered"><CircularProgress /></div>) : (
                     <div>
-                        <img src={computerChoiceImage} className="choice_image"></img>
+                        <img alt={computerChoice} src={computerChoiceImage} className="choice_image"></img>
                     </div>
                 )}
             </div>

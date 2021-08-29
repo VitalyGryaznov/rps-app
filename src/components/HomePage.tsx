@@ -1,5 +1,5 @@
 import React from 'react';
-import gameOptions from '../constants/gameOptions';
+import { gameOptions } from '../constants/gameOptions';
 import GameOption from './GameOption';
 import './HomePage.scss';
 
