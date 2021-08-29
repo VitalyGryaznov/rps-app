@@ -17,7 +17,7 @@ const GameOption = (props: any) => {
     const imageUrl = require("../assets/" + props.image).default
 
     return <div onClick={handleSellect} className="game-option-container">
-        <img alt={props.name} src={imageUrl} className="game-option-image"></img>
+        <img alt={props.name} src={imageUrl} className="game-option-image" />
     </div>
 }
 

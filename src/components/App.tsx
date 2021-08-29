@@ -8,7 +8,7 @@ import './App.scss';
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header />
       <Switch>
         <Route path="/result">
           <Result />

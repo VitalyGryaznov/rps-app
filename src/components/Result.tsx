@@ -49,7 +49,7 @@ const Result = () => {
         <div className="results">
             <div className="results_item">
                 <div>Your choice</div>
-                <img alt={gamesState.game.customerChoice} src={customerChoiceImage} className="choice_image"></img>
+                <img alt={gamesState.game.customerChoice} src={customerChoiceImage} className="choice_image" />
             </div>
             <div className="results_item results_item_center-horizontally results_item_highlited">
                 {(loading) ? (<div className="centered"><CircularProgress /></div>) : (
@@ -63,7 +63,7 @@ const Result = () => {
 
                 {(loading) ? (<div className="centered"><CircularProgress /></div>) : (
                     <div>
-                        <img alt={computerChoice} src={computerChoiceImage} className="choice_image"></img>
+                        <img alt={computerChoice} src={computerChoiceImage} className="choice_image" />
                     </div>
                 )}
             </div>
